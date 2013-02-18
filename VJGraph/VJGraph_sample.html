@@ -6,13 +6,13 @@
 </head>
 <body>
 
-	<div id="graphWrapper"></div>
-	<div id="graphWrapper2"></div>
+	<div id="graphWrapper" style="border:solid black 1px;"></div>
+	<div id="graphWrapper2" style="border:solid black 1px;"></div>
 
-<script src="./VJGraph.js"></script>
+<script src="https://raw.github.com/unikys/vj/master/VJGraph/VJGraph.js"></script>
 <script>
-	VJ.graph("graphWrapper", [100, 200, 300, 400]);
-	VJ.graph("graphWrapper2", [[100, 200, 300, 400], [300, 400, 200, 100]]);
+	VJ.graph("graphWrapper", [100, 200, 300, 400], {max:500, width:300, height:150});
+	VJ.graph("graphWrapper2", [[100, 200, 300, 400], [300, 400, 200, 100]], {max:500, width:300, height:150});
 </script>
 </body>
 </html>
